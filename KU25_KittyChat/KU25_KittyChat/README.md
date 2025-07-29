@@ -145,7 +145,15 @@ static let appId = "your-actual-sendbird-app-id"
 static let apiToken = "your-actual-sendbird-api-token"
 ```
 
+#### 3. Webhook Endpoint URL
 
+1. Set up webhook endpoint (Firebase Functions, AWS Lambda, etc.)
+2. Open `Core/Managers/WebhookEndpointURL.swift`
+3. Replace line 8 URL:
+
+```swift
+// Replace this line
+return "https://<URL>.ngrok-free.app/kittychat-149e5/us-central1/sendbirdWebhook"
 
 
 
